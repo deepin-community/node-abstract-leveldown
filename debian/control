@@ -1,0 +1,30 @@
+Source: node-abstract-leveldown
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Xavier Guimard <yadd@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+ , node-immediate <!nocheck>
+ , node-rimraf <!nocheck>
+ , node-sinon (>= 7.4.2) <!nocheck>
+ , node-tape <!nocheck>
+ , pkg-js-tools (>= 0.9.35~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-abstract-leveldown
+Vcs-Git: https://salsa.debian.org/js-team/node-abstract-leveldown.git
+Homepage: https://github.com/rvagg/node-abstract-leveldown
+Rules-Requires-Root: no
+
+Package: node-abstract-leveldown
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+ , node-immediate
+ , nodejs
+Description: Abstract prototype matching the LevelDOWN API - Node.js module
+ abstract-leveldown is a Node.js module which is an abstract prototype
+ matching the LevelDOWN API. Useful for extending LevelUP functionality by
+ providing a replacement to LevelDOWN.
+ .
+ Node.js is an event-based server-side JavaScript engine.
