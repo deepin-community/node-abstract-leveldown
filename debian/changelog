@@ -1,3 +1,30 @@
+node-abstract-leveldown (6.3.0+~cs7.0.4-3) unstable; urgency=medium
+
+  * Fix level-supports install (fixes autopkgtest)
+
+ -- Yadd <yadd@debian.org>  Fri, 14 Jan 2022 06:29:53 +0100
+
+node-abstract-leveldown (6.3.0+~cs7.0.4-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete field Contact from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * debian/watch
+    * Add ctype=nodejs to component(s)
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Thu, 13 Jan 2022 21:57:29 +0100
+
 node-abstract-leveldown (6.3.0+~cs7.0.4-1) unstable; urgency=medium
 
   * Declare compliance with policy 4.5.0
